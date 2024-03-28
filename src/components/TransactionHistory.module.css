@@ -1,0 +1,25 @@
+.table {
+    width: 100%;
+    
+  }
+.rows, .colums {
+    padding: 4px 8px;
+    border: 1px solid #212121;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+  .thead {
+    padding: 10px;
+    
+    text-align: center;
+    color: #f2f2f2;
+    background-color: rgb(31, 30, 30);
+    margin: 0 auto;
+  }
+  
+.head:nth-child(odd) {
+    background-color: #c0c4c5;
+}
+  
+  

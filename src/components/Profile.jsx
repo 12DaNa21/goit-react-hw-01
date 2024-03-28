@@ -1,13 +1,13 @@
-
+import React from 'react';
 import styles from './Profile.module.css'; 
 
-const Profile = ({ name, tag, location, image, stats }) => {
+export default function Profile ({ name, tag, location, image, stats }) {
   return (
     <div className={styles.profile}> 
-      <div className={styles.card}>
+      <div>
         <img
           src={image}
-          alt="User avatar"
+          alt={name}
         />
         <p className={styles.name}>{name}</p> 
         <p>@{tag}</p>
@@ -32,4 +32,3 @@ const Profile = ({ name, tag, location, image, stats }) => {
   );
 };
 
-export default Profile;
