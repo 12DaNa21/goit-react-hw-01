@@ -8,7 +8,7 @@ body {
   height: 100vh;
 }
 .profile {
-    width: auto;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -22,21 +22,24 @@ body {
   }
  
   .profile img {
-    width: 100%;
-    height: 100%;
-    align-content: center;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    
+    margin: 0 auto;
     background-color: rgb(58, 55, 55);
-    object-fit: cover;
-    margin-bottom: 50px;
+    
+    
   }
   
   .profile p {
+    
     color: rgb(147, 150, 153);
     text-align: center;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 28px;
     line-height: 1.5;
     letter-spacing: -0.02em;
     margin-bottom: 8px;
@@ -44,41 +47,38 @@ body {
   .profile .name {
 
     font-weight: bold;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: black;
-    margin-bottom: 20px;
+    margin: 20px;
   }
   
   .profile ul {
     border-top: 4px solid rgb(128, 128, 128);
-    overflow: hidden;
-    margin: 0;
-    width: 100%;
-    height: auto;
     display: flex;
-    flex-wrap: nowrap;
-    padding: 0;
     
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    
     font-weight: 400px;
-    font-size: 50px;
+    font-size: 28px;
     color: black;
     background: rgb(201, 198, 198);
   }
   .profile li {
-    
-    flex: 1;
-    border-right: 4px solid rgb(128, 128, 128);
-    border-left: 4px solid rgb(128, 128, 128);
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 50px;
+    width: 100%;
+    
+    border-right: 4px solid rgb(128, 128, 128);
+    border-left: 4px solid rgb(128, 128, 128);
+    
   }
   .profile li:last-child {
     border: none;
@@ -87,7 +87,10 @@ body {
     border: none;
   }
   .profile .opts {
-    margin-top: 8px;
+    margin-top: 10px;
     font-weight: bold; 
     
+  }
+ span {
+    margin: 10px auto;
   }
